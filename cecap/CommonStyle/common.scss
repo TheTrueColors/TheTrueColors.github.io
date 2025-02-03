@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    box-sizing: border-box;
+    overflow: auto;
+    /* Aggiungi l'overflow solo al div content */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+
+.divider {
+    background-color: blue;
+    border-radius: 50%;
+}
+
+/* Divider 2 */
+.divider2 {
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-family: "Tangerine", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: red;
+}
+
+
+h2 {
+    font-family: "Baskervville", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    color: blue;
+    margin-top: 15px;
+}
+
+img {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Link */
+a {
+    color: black;
+    padding-bottom: 5px;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+
+
+
+@media (max-width: 1340px) {
+    .container {
+        font-size: 16px;
+    }
+
+
+    .divider {
+        background-color: blue;
+        border-radius: 50%;
+    }
+    
+    /* Divider 2 */
+    .divider2 {
+        border-radius: 10px;
+        box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+    
+    a {
+        color: black;
+        padding-bottom: 5px;
+        font-size: 16px;
+    }
+
+    h1 {
+        padding-top: 20px;
+        font-family: "Tangerine", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25px;
+        color: red;
+    }
+    
+    
+    h2 {
+        font-family: "Baskervville", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        color: blue;
+    }
+
+    p{
+        font-size: 16px;
+    }
+}
+
+*{
+    text-align: justify; /* Giustifica il testo */
+    vertical-align: middle; /* Centra il testo verticalmente */
+    hyphens: auto; /* Permette la sillabazione automatica */
+    word-break: break-word; /* Evita che parole lunghe sforino */
+}
+
+  /* Stile dell'overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .full-image {
+    width: fit-content;
+    height: fit-content;
+    max-width: 90vw;
+    max-height: 90vw;
+    border-radius: 10px;
+  }
+  

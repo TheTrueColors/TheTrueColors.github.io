@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Dancing+Script:wght@400..700&family=Fira+Code:wght@300..700&family=Tangerine:wght@400;700&display=swap');
+
+.container {
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    min-height: calc(100vh - 210px); /* Calcola l'altezza rimanente, sottraendo l'altezza dell'header */
+}
+
+.image_slider{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.contenitore_immagini {
+    max-width: 100vw;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-sizing: border-box; /* Impedisce di superare i limiti del viewport */
+    gap:5px;
+}
+
+.slider_img {
+    width: 100%;
+    height: 140px;
+    max-width: 100%; /* Limita la dimensione massima delle immagini */
+    object-fit: contain; /* Evita distorsioni */
+}
+
+.content {
+    width: 90%;
+    height: 100%;
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    min-height: fit-content;
+}
+
+.info {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.saluti{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+h1 {
+    font-family: "Tangerine", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: red;
+}
+
+h2 {
+    font-family: "Baskervville", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    color: blue;
+}
+
+img {
+    max-width: 50dvw;
+    max-height: 80dvh;
+    object-fit: contain;
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+
+img.ico {
+    height: 30px;
+    width: 30px;
+    cursor: default;
+}
+img.ico:hover {
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+
+}
+
+.icon {
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+}
+
+.titolo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1;
+    height: auto;
+    max-height: 300px;
+}
+
+*{
+    text-align: justify; /* Giustifica il testo */
+    vertical-align: middle; /* Centra il testo verticalmente */
+    hyphens: auto; /* Permette la sillabazione automatica */
+    word-break: break-word; /* Evita che parole lunghe sforino */
+}
+
+  /* Stile dell'overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .full-image {
+    max-width: 90vw;
+    max-height: 90vw;
+    border-radius: 10px;
+  }
+  
